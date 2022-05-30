@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import image from "../images/hotelhome.jpg";
 import image2 from "../images/hotelbooking.png";
-import Map from './Map';
 import "./style.css"
 
 export default function Home() {
@@ -87,7 +86,7 @@ export default function Home() {
       <br />
       <div>
         <center><h1 style={{ color: "black" }}>Find Us On Google map</h1></center>
-        <center><Map /></center>
+        {/* <center><Map /></center> */}
       </div>
     </div>
   )
