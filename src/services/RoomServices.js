@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 
-let getRooomsURL = "http://localhost:8280/rooms/getallrooms"; 
-let AddRoomURL = "http://localhost:8080/room/createRoom";
-let DeleteRoomURL = "http://localhost:8080/room/deleteRoom/";
-let getRoomByIdURL = "http://localhost:8080/room/getRoomById/";
-let updateRoomByIdURL = "http://localhost:8080/room/updateRoomById/";
+let getRooomsURL = "https://kushanbackend.herokuapp.com/rooms/getallrooms"; 
+let AddRoomURL = "https://kushanbackend.herokuapp.com/room/createRoom";
+let DeleteRoomURL = "https://kushanbackend.herokuapp.com/room/deleteRoom/";
+let getRoomByIdURL = "https://kushanbackend.herokuapp.com/room/getRoomById/";
+let updateRoomByIdURL = "https://kushanbackend.herokuapp.com/room/updateRoomById/";
 
 
 export async function AddNewRoom(data) {

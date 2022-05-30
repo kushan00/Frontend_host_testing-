@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 
-let getpaymnets = "http://localhost:8080/payment/getPayments";
-let doPayment = "http://localhost:8080/payment/makePayment";
+let getpaymnets = "https://kushanbackend.herokuapp.com/payment/getPayments";
+let doPayment = "https://kushanbackend.herokuapp.com/payment/makePayment";
 
 
 

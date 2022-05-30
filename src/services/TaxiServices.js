@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 
-let taxiBookURL = "http://localhost:8080/taxi/BookTaxi";
+let taxiBookURL = "https://kushanbackend.herokuapp.com/taxi/BookTaxi";
 
 
 

@@ -1,12 +1,12 @@
 import axios from 'axios';
 
 
-let getResevationURL = "http://localhost:8280/resevation/getallresevations";
-let AddResevationURL = "http://localhost:8080/resevation/createReservations";
-let DeleteResevationURL = "http://localhost:8080/resevation/deleteResevation/";
-let getResevationByIdURL = "http://localhost:8080/resevation/getReservationsById/";
-let updateResevationByIdURL = "http://localhost:8080/resevation/updateReservationsById/";
-let getResevationDatabyUserIDURL = "http://localhost:8080/resevation/getResevationByUserID/";
+let getResevationURL = "https://kushanbackend.herokuapp.com/resevation/getallresevations";
+let AddResevationURL = "https://kushanbackend.herokuapp.com/resevation/createReservations";
+let DeleteResevationURL = "https://kushanbackend.herokuapp.com/resevation/deleteResevation/";
+let getResevationByIdURL = "https://kushanbackend.herokuapp.com/resevation/getReservationsById/";
+let updateResevationByIdURL = "https://kushanbackend.herokuapp.com/resevation/updateReservationsById/";
+let getResevationDatabyUserIDURL = "https://kushanbackend.herokuapp.com/resevation/getResevationByUserID/";
 
 export async function AddResevation(data) {
     const alldata = {

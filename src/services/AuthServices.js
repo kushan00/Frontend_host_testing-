@@ -1,13 +1,13 @@
 import axios from 'axios';
 
 
-let RegisterURL = "http://localhost:8080/user/signup";
-let LoginURL = "http://localhost:8080/user/signin";
-let AuthURL = "http://localhost:8080/user/auth";
-let getAllUsers = "http://localhost:8280/users/getallusers";
-let CreateHotelAdmin = "http://localhost:8080/user/createUser";
-let UpdateHotelAdmin = "http://localhost:8080/user/updateUserById/";
-let DeleteHotelAdmin = "http://localhost:8080/user/deleteUser/";
+let RegisterURL = "https://kushanbackend.herokuapp.com/user/signup";
+let LoginURL = "https://kushanbackend.herokuapp.com/user/signin";
+let AuthURL = "https://kushanbackend.herokuapp.com/user/auth";
+let getAllUsers = "https://kushanbackend.herokuapp.com/users/getallusers";
+let CreateHotelAdmin = "https://kushanbackend.herokuapp.com/user/createUser";
+let UpdateHotelAdmin = "https://kushanbackend.herokuapp.com/user/updateUserById/";
+let DeleteHotelAdmin = "https://kushanbackend.herokuapp.com/user/deleteUser/";
 
 export async function RegisterCustomer(data) {
     const alldata = {
