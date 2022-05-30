@@ -162,7 +162,7 @@ const BookRoom = () => {
 
    const Selection = (e,num) => {
         e.preventDefault();
-        if(num == 1)
+        if(num === 1)
         {
             setshowAddForm(false);
             setshowTable(false);
@@ -171,7 +171,7 @@ const BookRoom = () => {
             setShowTaxiSelection(false);
             setShowTaxiForm(false);
         }
-        if(num == 0)
+        if(num === 0)
         {
             setshowAddForm(false);
             setshowTable(false);
@@ -185,7 +185,7 @@ const BookRoom = () => {
 
    const TaxiSelection = (e,num) => {
     e.preventDefault();
-    if(num == 1)
+    if(num === 1)
     {
         setshowAddForm(false);
         setshowTable(false);
@@ -194,7 +194,7 @@ const BookRoom = () => {
         setShowTaxiSelection(false);
         setShowTaxiForm(true);
     }
-    if(num == 0)
+    if(num === 0)
     {
         window.location.reload();
     }
@@ -214,7 +214,7 @@ const BookRoom = () => {
 
     let data = await AddResevation(alldata);
     console.log("Resevation",data);
-    if(data?.data?._id == "")
+    if(data?.data?._id === "")
     {
         alert("Resevation Failed");
     }
@@ -302,19 +302,19 @@ const BookRoom = () => {
                  <div className="navbar-nav">
 
                    {/* System Admin pages */}
-                   <a style={{display:localStorage.getItem("userRole") == "systemAdmin" ?"flex":"none"}} className="nav-link active" aria-current="page" href="/AllRooms">All Rooms</a>
-                   <a style={{display:localStorage.getItem("userRole") == "systemAdmin" ?"flex":"none"}} className="nav-link active" href="/AllResevations" aria-current="page">All Resevations</a>
-                   <a style={{display:localStorage.getItem("userRole") == "systemAdmin" ?"flex":"none"}} className="nav-link active" href="/AllCustomers" aria-current="page">All Customers</a>    
-                   <a style={{display:localStorage.getItem("userRole") == "systemAdmin" ?"flex":"none"}} className="nav-link active" href="/AllHotelAdmin" aria-current="page">All Hotel Admins</a> 
+                   <a style={{display:localStorage.getItem("userRole") === "systemAdmin" ?"flex":"none"}} className="nav-link active" aria-current="page" href="/AllRooms">All Rooms</a>
+                   <a style={{display:localStorage.getItem("userRole") === "systemAdmin" ?"flex":"none"}} className="nav-link active" href="/AllResevations" aria-current="page">All Resevations</a>
+                   <a style={{display:localStorage.getItem("userRole") === "systemAdmin" ?"flex":"none"}} className="nav-link active" href="/AllCustomers" aria-current="page">All Customers</a>    
+                   <a style={{display:localStorage.getItem("userRole") === "systemAdmin" ?"flex":"none"}} className="nav-link active" href="/AllHotelAdmin" aria-current="page">All Hotel Admins</a> 
 
                   {/* Hotel admin Pages */}
-                  <a style={{display:localStorage.getItem("userRole") == "hotelAdmin" ?"flex":"none"}} className="nav-link active" href="/AllCustomers" aria-current="page">All Customers</a>  
-                  <a style={{display:localStorage.getItem("userRole") == "hotelAdmin" ?"flex":"none"}} className="nav-link active" href="/AllRooms" aria-current="page">All Rooms</a>  
-                  <a style={{display:localStorage.getItem("userRole") == "hotelAdmin" ?"flex":"none"}} className="nav-link active" href="/AllResevations" aria-current="page">All Resevations</a>   
+                  <a style={{display:localStorage.getItem("userRole") === "hotelAdmin" ?"flex":"none"}} className="nav-link active" href="/AllCustomers" aria-current="page">All Customers</a>  
+                  <a style={{display:localStorage.getItem("userRole") === "hotelAdmin" ?"flex":"none"}} className="nav-link active" href="/AllRooms" aria-current="page">All Rooms</a>  
+                  <a style={{display:localStorage.getItem("userRole") === "hotelAdmin" ?"flex":"none"}} className="nav-link active" href="/AllResevations" aria-current="page">All Resevations</a>   
                   
                   {/* Customer Pages */}
-                  <a style={{display:localStorage.getItem("userRole") == "customer" ?"flex":"none"}} className="nav-link active" href="/BookRoom" aria-current="page">Rooms</a>  
-                  <a style={{display:localStorage.getItem("userRole") == "customer" ?"flex":"none"}} className="nav-link active" href="/CutomerProfile" aria-current="page">My Profile</a>  
+                  <a style={{display:localStorage.getItem("userRole") === "customer" ?"flex":"none"}} className="nav-link active" href="/BookRoom" aria-current="page">Rooms</a>  
+                  <a style={{display:localStorage.getItem("userRole") === "customer" ?"flex":"none"}} className="nav-link active" href="/CutomerProfile" aria-current="page">My Profile</a>  
 
                  </div>
                 </div>

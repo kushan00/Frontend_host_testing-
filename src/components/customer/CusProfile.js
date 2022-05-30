@@ -94,19 +94,19 @@ const CusProfile = () => {
                         <div className="navbar-nav">
 
                             {/* System Admin pages */}
-                            <a style={{ display: localStorage.getItem("userRole") == "systemAdmin" ? "flex" : "none" }} className="nav-link active" aria-current="page" href="/AllRooms">All Rooms</a>
-                            <a style={{ display: localStorage.getItem("userRole") == "systemAdmin" ? "flex" : "none" }} className="nav-link active" href="/AllResevations" aria-current="page">All Resevations</a>
-                            <a style={{ display: localStorage.getItem("userRole") == "systemAdmin" ? "flex" : "none" }} className="nav-link active" href="/AllCustomers" aria-current="page">All Customers</a>
-                            <a style={{ display: localStorage.getItem("userRole") == "systemAdmin" ? "flex" : "none" }} className="nav-link active" href="/AllHotelAdmin" aria-current="page">All Hotel Admins</a>
+                            <a style={{ display: localStorage.getItem("userRole") === "systemAdmin" ? "flex" : "none" }} className="nav-link active" aria-current="page" href="/AllRooms">All Rooms</a>
+                            <a style={{ display: localStorage.getItem("userRole") === "systemAdmin" ? "flex" : "none" }} className="nav-link active" href="/AllResevations" aria-current="page">All Resevations</a>
+                            <a style={{ display: localStorage.getItem("userRole") === "systemAdmin" ? "flex" : "none" }} className="nav-link active" href="/AllCustomers" aria-current="page">All Customers</a>
+                            <a style={{ display: localStorage.getItem("userRole") === "systemAdmin" ? "flex" : "none" }} className="nav-link active" href="/AllHotelAdmin" aria-current="page">All Hotel Admins</a>
 
                             {/* Hotel admin Pages */}
-                            <a style={{ display: localStorage.getItem("userRole") == "hotelAdmin" ? "flex" : "none" }} className="nav-link active" href="/AllCustomers" aria-current="page">All Customers</a>
-                            <a style={{ display: localStorage.getItem("userRole") == "hotelAdmin" ? "flex" : "none" }} className="nav-link active" href="/AllRooms" aria-current="page">All Rooms</a>
-                            <a style={{ display: localStorage.getItem("userRole") == "hotelAdmin" ? "flex" : "none" }} className="nav-link active" href="/AllResevations" aria-current="page">All Resevations</a>
+                            <a style={{ display: localStorage.getItem("userRole") === "hotelAdmin" ? "flex" : "none" }} className="nav-link active" href="/AllCustomers" aria-current="page">All Customers</a>
+                            <a style={{ display: localStorage.getItem("userRole") === "hotelAdmin" ? "flex" : "none" }} className="nav-link active" href="/AllRooms" aria-current="page">All Rooms</a>
+                            <a style={{ display: localStorage.getItem("userRole") === "hotelAdmin" ? "flex" : "none" }} className="nav-link active" href="/AllResevations" aria-current="page">All Resevations</a>
 
                             {/* Customer Pages */}
-                            <a style={{ display: localStorage.getItem("userRole") == "customer" ? "flex" : "none" }} className="nav-link active" href="/BookRoom" aria-current="page">Rooms</a>
-                            <a style={{ display: localStorage.getItem("userRole") == "customer" ? "flex" : "none" }} className="nav-link active" href="/CutomerProfile" aria-current="page">My Profile</a>
+                            <a style={{ display: localStorage.getItem("userRole") === "customer" ? "flex" : "none" }} className="nav-link active" href="/BookRoom" aria-current="page">Rooms</a>
+                            <a style={{ display: localStorage.getItem("userRole") === "customer" ? "flex" : "none" }} className="nav-link active" href="/CutomerProfile" aria-current="page">My Profile</a>
 
                         </div>
                     </div>
