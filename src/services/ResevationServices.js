@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-let getResevationURL = "https://kushanbackend.herokuapp.com/resevation/getallresevations";
+let getResevationURL = "https://kushanbackend.herokuapp.com/resevation/getAllresevations";
 let AddResevationURL = "https://kushanbackend.herokuapp.com/resevation/createReservations";
 let DeleteResevationURL = "https://kushanbackend.herokuapp.com/resevation/deleteResevation/";
 let getResevationByIdURL = "https://kushanbackend.herokuapp.com/resevation/getReservationsById/";

@@ -4,7 +4,7 @@ import axios from 'axios';
 let RegisterURL = "https://kushanbackend.herokuapp.com/user/signup";
 let LoginURL = "https://kushanbackend.herokuapp.com/user/signin";
 let AuthURL = "https://kushanbackend.herokuapp.com/user/auth";
-let getAllUsers = "https://kushanbackend.herokuapp.com/users/getallusers";
+let getAllUsers = "https://kushanbackend.herokuapp.com//user/getAllUsers";
 let CreateHotelAdmin = "https://kushanbackend.herokuapp.com/user/createUser";
 let UpdateHotelAdmin = "https://kushanbackend.herokuapp.com/user/updateUserById/";
 let DeleteHotelAdmin = "https://kushanbackend.herokuapp.com/user/deleteUser/";

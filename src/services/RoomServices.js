@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-let getRooomsURL = "https://kushanbackend.herokuapp.com/rooms/getallrooms"; 
+let getRooomsURL = "https://kushanbackend.herokuapp.com/room/getAllRooms"; 
 let AddRoomURL = "https://kushanbackend.herokuapp.com/room/createRoom";
 let DeleteRoomURL = "https://kushanbackend.herokuapp.com/room/deleteRoom/";
 let getRoomByIdURL = "https://kushanbackend.herokuapp.com/room/getRoomById/";
